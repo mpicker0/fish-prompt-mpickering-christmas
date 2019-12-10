@@ -62,12 +62,13 @@ function fish_prompt
   set --local exit_indicator (_exit_indicator)
 
   # Line 1
-  echo -n $arrow_color'┌'$cyan$USER$__fish_prompt_remote $normal(prompt_pwd)$normal
+  echo -n $arrow_color'┌'🌟 $cyan$USER$normal ❄️ $__fish_prompt_remote $normal(prompt_pwd)$normal
   __fish_git_prompt
   __fish_svn_prompt
   venv_status
+  echo -n ❄️
   echo
 
   # Line 2
-  echo -n $arrow_color'└'$exit_indicator$prompt_char_color'TODO'$__fish_prompt_char $normal
+  echo -n $arrow_color'└'$exit_indicator$prompt_char_color 🎁' '🎄$__fish_prompt_char $normal
 end
